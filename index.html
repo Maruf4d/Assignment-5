@@ -152,10 +152,10 @@
               </div>
               
             </div>
-            <div>
+            <div id="ticket-price" class="550tk">
               <div class="ml-96 lg:w-fit lg:m-0 lg:absolute top-[1630px] right-72">
                 <img src="images/fare.png">
-                <h1 class="font-bold text-2xl">550 taka</h1>
+                <h1 class="font-bold text-2xl" >550 <span>taka</span></h1>
                 <p class="text-gray-500">Per Seat</p>
               </div>
             </div>
@@ -256,20 +256,17 @@
                 <h3>Price</h3>
               </div><br>
               <hr class="border-dashed border-gray-400">
-              <div class="flex justify-between text-gray-400 mt-2 p-3">
-                <h3>B1</h3>
-                <h3>economy</h3>
-                <h3>550</h3>
-              </div>
-              <div class="flex justify-between text-gray-400 mt-2 p-3">
-                <h3>B2</h3>
-                <h3>economy</h3>
-                <h3>550</h3>
-              </div><br>
+              <!-- <div id="select-seat-container" class="flex justify-between text-gray-400 mt-2 p-3">
+              </div> -->
+              <ul id="select-seat-container" class="font-medium text-gray-400">
+              
+
+              </ul>
+            <br>
               <hr class="border-dashed border-gray-400">
               <div class="flex justify-between font-bold p-3">
                 <h3>Total Price</h3>
-                <h4>BDT<span>1100</span></h4>
+                <h4>BDT <span id="total-price">0</span></h4>
               </div>
               <div>
                 <input class="h-12 items-center w-96 rounded-xl ml-5 bg-white" type="text" placeholder="Have any coupon?">
@@ -278,7 +275,7 @@
               </div>
               <div class="flex justify-between font-bold p-3">
                 <h3>Grand Total</h3>
-                <h4>BDT<span>1100</span></h4>
+                <h4>BDT<span>0</span></h4>
               </div>
             </div>
             <div>

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
+    <link rel="shortcut icon" href="images/success.png" type="image/x-icon">
 
     <!-- Tailwind && Daisyui -->
-    <link rel="shortcut icon" href="images/success.png" type="image/x-icon">
+   
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -56,7 +57,7 @@
                 End-to-End Travel with <br><span class="text-rose-600">Sukh Paribahan</span>
               </h1>
               <p class="mt-8 font-inter pl-32 pr-32">Bangladesh’s largest online ticket destination, which is committed to making your life convenient, easier and smarter.The integrated testing features allow for a streamlined</p>
-              <button onclick="smoothScrollDawn()" id="scroll" class="btn btn-success mt-10 bg-rose-600 font-bold border-none">Buy Tickets</button>
+              <button id="scroll" class="btn btn-success mt-10 bg-rose-600 font-bold border-none">Buy Tickets</button>
              </div>
           </div>
           </section>
@@ -119,7 +120,7 @@
       <section class="w-screen h-full bg-slate-300 rounded-t-[50px] border-4 border-t-green-500">
 
         <div class="">
-          <div class="text-center pt-24">
+          <div id="ms" class="text-center pt-24">
             <h1 class="font-extrabold text-3xl"> M.S Paribahan </h1>
             <p class="pl-64 pr-64 mt-8"> Our Travel Coach ensures experienced drivers that we care about your every safety matter. No need to feel hesitation in searching for any solution from them. They are trained primarily to provide travel services.</p>
           </div>
@@ -130,7 +131,7 @@
               <h1 class="ml-2">Green Paribahan <br> <span class="text-gray-500">Coach-009-WEB ! AC_Business</span></h1>
             </div>
               <button class="btn bg-green-200 text-green-400 font-bold">
-                <img src="images/seat-green.png" >24 Seats left</button>
+                <img src="images/seat-green.png" ><span id="seat-count">24</span> Seats left</button>
             </div>
             <div class="lg:w-[60%] bg-gray-200 rounded-3xl ml-10">
               <div class="p-7">
@@ -155,14 +156,14 @@
             <div id="ticket-price" class="550tk">
               <div class="ml-96 lg:w-fit lg:m-0 lg:absolute top-[1630px] right-72">
                 <img src="images/fare.png">
-                <h1 class="font-bold text-2xl" >550 <span>taka</span></h1>
+                <h1 class="font-bold text-2xl">550 <span>taka</span></h1>
                 <p class="text-gray-500">Per Seat</p>
               </div>
             </div>
           </div>
         </div>
 
-        <article class="max-w-screen-lg m-auto mt-10 flex bg-white rounded-xl">
+        <article id="buy-ticket" class="max-w-screen-lg m-auto mt-10 flex bg-white rounded-xl">
           <div class="w-[55%]">
             <h1 class="font-semibold text-2xl pb-8">Select Your Seat</h1>
             <div class="flex justify-between">
@@ -173,75 +174,99 @@
             </div>
             <!-- seat -->
             <div class="mt-5 ml-2">
-              <div class="flex items-center">
+              <div class="flex items-center gap-4 ">
               <h1>A</h1>
-              <div class="mr-36">
-                <button class="add-btn btn w-20 mr-6 ml-5">A1</button>
-              <button class="add-btn btn w-20">A2</button>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20">A1</button>
               </div>
-              <div>
-                <button class="add-btn btn w-20 mr-6">A3</button>
+              <div class="mr-36 rounded-xl">
+                <button class="add-btn btn w-20">A2</button>
+              </div>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20">A3</button>
+              </div>
+              <div class="rounded-xl">
               <button class="add-btn btn w-20">A4</button>
               </div>
               </div>
               <!-- B -->
-              <div class="flex items-center mt-4">
+              <div class="flex items-center gap-4 mt-4">
               <h1>B</h1>
-              <div class="mr-36">
-                <button class="add-btn btn w-20 mr-6 ml-5">B1</button>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20">B1</button>
+              </div>
+              <div class="mr-36 rounded-xl">
               <button class="add-btn btn w-20">B2</button>
               </div>
-              <div>
-                <button class="add-btn btn w-20 mr-6">B3</button>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20">B3</button>
+              </div>
+              <div class="rounded-xl">
               <button class="add-btn btn w-20">B4</button>
               </div>
               </div>
               <!-- C -->
-              <div class="flex items-center mt-4">
+              <div class="flex items-center gap-4 mt-4">
               <h1>C</h1>
-              <div class="mr-36">
-                <button class="add-btn btn w-20 mr-6 ml-5">C1</button>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20">C1</button>
+              </div>
+              <div class="mr-36 rounded-xl">
               <button class="add-btn btn w-20">C2</button>
               </div>
-              <div>
-                <button class="add-btn btn w-20 mr-6">C3</button>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20">C3</button>
+              </div>
+              <div class="rounded-xl">
               <button class="add-btn btn w-20">C4</button>
               </div>
               </div>
               <!-- D -->
-              <div class="flex items-center mt-4">
+              <div class="flex items-center gap-4 mt-4">
               <h1>D</h1>
-              <div class="mr-36">
-                <button class="add-btn btn w-20 mr-6 ml-5">D1</button>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20">D1</button>
+              </div>
+              <div class="mr-36 rounded-xl">
               <button class="add-btn btn w-20">D2</button>
               </div>
-              <div>
-                <button class="add-btn btn w-20 mr-6">D3</button>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20">D3</button>
+              </div>
+              <div class="rounded-xl">
               <button class="add-btn btn w-20">D4</button>
               </div>
               </div>
               <!-- E -->
-              <div class="flex items-center mt-4">
+              <div class="flex items-center gap-4 mt-4">
               <h1>E</h1>
-              <div class="mr-36">
-                <button class="add-btn btn w-20 mr-6 ml-5">E1</button>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20">E1</button>
+              </div>
+              <div class="mr-36 rounded-xl">
               <button class="add-btn btn w-20">E2</button>
               </div>
-              <div>
-                <button class="add-btn btn w-20 mr-6">E3</button>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20">E3</button>
+              </div>
+              <div class="rounded-xl">
               <button class="add-btn btn w-20">E4</button>
               </div>
               </div>
               <!-- F -->
-              <div class="flex items-center mt-4">
+              <div class="flex items-center gap-4 mt-4">
               <h1>F</h1>
-              <div class="mr-36">
-                <button class="add-btn btn w-20 mr-6 ml-5">F1</button>
-              <button class="add-btn btn w-20">F2</button>
+              <div class="rounded-xl">
+              <button class="add-btn btn w-20">F1</button>
               </div>
-              <div>
-                <button class="add-btn btn w-20 mr-6">F3</button>
-              <button class="add-btn btn w-20">F4</button>
+              <div class="mr-36 rounded-xl">
+                <button class="add-btn btn w-20">F2</button>
+              </div>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20">F3</button>
+              </div>
+              <div class="rounded-xl">
+                <button class="add-btn btn w-20 rounded-2xl">F4</button>
               </div>
               </div>
             </div>
@@ -251,16 +276,12 @@
             <h1 class="font-semibold text-2xl pb-8">Select Your Seat</h1>
             <div class="w-[433px] h-[360px] bg-slate-300 rounded-3xl">
               <div class="flex justify-between font-bold p-3">
-  <h3>Seat <sup id="card-count" class="bg-green-500 w-[px] h-[px] text-white">0</sup></h3>
+                 <h3>Seat <sup id="card-count" class="bg-green-500 w-[px] h-[px] text-white">0</sup></h3>
                 <h3>Class</h3>
                 <h3>Price</h3>
               </div><br>
               <hr class="border-dashed border-gray-400">
-              <!-- <div id="select-seat-container" class="flex justify-between text-gray-400 mt-2 p-3">
-              </div> -->
               <ul id="select-seat-container" class="font-medium text-gray-400">
-              
-
               </ul>
             <br>
               <hr class="border-dashed border-gray-400">
@@ -269,21 +290,37 @@
                 <h4>BDT <span id="total-price">0</span></h4>
               </div>
               <div>
-                <input class="h-12 items-center w-96 rounded-xl ml-5 bg-white" type="text" placeholder="Have any coupon?">
-                <button  class="btn absolute right-44 bg-emerald-400 text-white font-bold">Apply</button>
+                <input id="coupon-text" class="h-12 items-center w-96 rounded-xl ml-5 bg-white border-none" type="text" placeholder="Have any coupon?">
+
+                <!-- apply -->
+                <div class="btn absolute right-48 bg-emerald-400 text-white font-bold">
+                  <button id="apply-btn" onclick="totalGrand('apply-btn')">Apply</button>
+                </div>
                 
               </div>
               <div class="flex justify-between font-bold p-3">
                 <h3>Grand Total</h3>
-                <h4>BDT<span>0</span></h4>
+                <h4>BDT<span id="grand-total">0</span></h4>
               </div>
             </div>
+
+            <!-- Modal -->
             <div>
-              <button class="btn btn-wide w-full mt-10 ml-2 bg-emerald-400 font-bold text-xl text-white">Next</button>
+              <label for="my_modal_6"  class="btn btn-wide w-full mt-10 ml-2 bg-emerald-400 font-bold text-xl text-white add-btn">Next</label>
+              <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+              <div class="modal" role="dialog">
+                <div class="modal-box text-center">
+                  <img class="pl-44 pb-6" src="images/success.png" alt="">
+                  <h3 class="font-bold text-lg">SUCCESS</h3>
+                  <p class="py-4 text-black font-semibold">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. <br> <span class="text-gray-400 font-normal">Shortly you will find a confirmation in your email.</span></p>
+                  <div class="">
+                    <label for="my_modal_6" class="btn bg-emerald-400 font-bold text-xl text-white">Continue</label>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </article>
-
 
       </section>
     </main>
